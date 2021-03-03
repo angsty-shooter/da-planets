@@ -2,7 +2,6 @@ import express from "express";
 import BaseController from "../utils/BaseController";
 import { galaxyService } from "../services/GalaxyService";
 import { starService } from "../services/StarService";
-//import star
 
 export class GalaxyController extends BaseController{
 
