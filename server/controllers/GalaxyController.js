@@ -5,7 +5,7 @@ import { galaxyService } from "../services/GalaxyService";
 export class galaxyController extends BaseController{
      constructor(){
          super("api/galaxy")
-         this router
+         this.router
             .get("", this.getAll)
             .post("", this.create)
      }
