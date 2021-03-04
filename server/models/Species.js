@@ -5,7 +5,8 @@ const ObjectId = mongoose.SchemaTypes.ObjectId
 const Species = new Schema (
     {
         name: {type: String, required: true },
-        isBiped: {type: Boolean, default: false}
+        isBiped: {type: Boolean, default: false},
+        moon: {type: ObjectId, ref: "Moon", required: true }
     },
     { timestamps: true, toJSON: { virtuals: true } }
 )
